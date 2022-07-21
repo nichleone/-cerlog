@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situazione comunità</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="/images/logo.png" alt="Logo CerLog">
+        </section>
+
+        <section class="user-menu">
+            <div class="profile" onclick="menuToggle()">
+                <picture>
+                    <img src="images/userdark.png" id="darkUserPic">
+                    <img src="/images/user.png" id="lightUserPic">
+                </picture>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Saldo attuale</a></li>
+                    <li><a href="contributopersonale.html">Contributo personale</a></li>
+                    <li><a href="#">Situazione comunità</a></li>
+                    <li><a href="storicocomunita.html">Storico comunità</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <label class="switch">
+        <input type="checkbox" onclick="darkMode()">
+        <span class="slider round"></span>
+    </label>
+
+    <br>
+    <h1 class="tablet-title text-center">Situazione comunità</h1>
+
+    <section class="tabella-sitc">
+        <table class="text-center">
+            <tbody>
+                <tr class="bg-green">
+                    <td>Produzione</td>
+                    <td>20</td>
+                </tr>
+                <tr class="bg-orange">
+                    <td>Consumo</td>
+                    <td>12</td>
+                </tr>
+                <tr class="bg-green">
+                    <td>Saldo</td>
+                    <td>8</td>
+                </tr>
+                <tr class="bg-orange">
+                    <td>Risultato stimato</td>
+                    <td>€200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <br><br><br><br><br><br>
+    <p class="consumption-info text-center text-small">Valore in kWh <br>Media degli ultimi 5 minuti <br>Aggiornata alle
+        <span id="hour"></span>
+    </p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storico comunità</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="/images/logo.png" alt="Logo CerLog">
+        </section>
+
+        <section class="user-menu">
+            <div class="profile" onclick="menuToggle()">
+                <picture>
+                    <img src="images/userdark.png" id="darkUserPic">
+                    <img src="/images/user.png" id="lightUserPic">
+                </picture>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Saldo attuale</a></li>
+                    <li><a href="contributopersonale.html">Contributo personale</a></li>
+                    <li><a href="situazionecomunita.html">Situazione comunità</a></li>
+                    <li><a href="#">Storico comunità</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <label class="switch">
+        <input type="checkbox" onclick="darkMode()">
+        <span class="slider round"></span>
+    </label>
+
+    <br>
+    <h1 class="tablet-title text-center">Storico comunità</h1>
+
+    <section class="tab">
+        <span id="lastWeek" class="tab-content">
+            <table class="text-center">
+                <thead class="text-small">
+                    <th class="tab-links" onclick="openTab(event, 'lastWeek')">Ultima settimana</th>
+                    <th class="tab-links" onclick="openTab(event, 'thisMonth')">Questo mese</th>
+                    <th class="tab-links" onclick="openTab(event, 'lastMonth')">Mese scorso</th>
+                    <th class="tab-links" onclick="openTab(event, 'year')">Anno</th>
+                </thead>
+                <tbody class="bg-blue">
+                    <tr>
+                        <td colspan="2">Produzione</td>
+                        <td colspan="2">20</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Consumo</td>
+                        <td colspan="2">18</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Saldo</td>
+                        <td colspan="2">2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Risultato</td>
+                        <td colspan="2">€ 200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+
+        <span id="thisMonth" class="tab-content">
+            <table class="text-center">
+                <thead class="text-small">
+                    <th class="tab-links" onclick="openTab(event, 'lastWeek')">Ultima settimana</th>
+                    <th class="tab-links" onclick="openTab(event, 'thisMonth')">Questo mese</th>
+                    <th class="tab-links" onclick="openTab(event, 'lastMonth')">Mese scorso</th>
+                    <th class="tab-links" onclick="openTab(event, 'year')">Anno</th>
+                </thead>
+                <tbody class="bg-green">
+                    <tr>
+                        <td colspan="2">Produzione</td>
+                        <td colspan="2">86</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Consumo</td> 
+                        <td colspan="2">74</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Saldo</td>
+                        <td colspan="2">12</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Risultato</td>
+                        <td colspan="2">€ 1.200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+
+
+        <span id="lastMonth" class="tab-content">
+            <table class="text-center">
+                <thead class="text-small">
+                    <th class="tab-links" onclick="openTab(event, 'lastWeek')">Ultima settimana</th>
+                    <th class="tab-links" onclick="openTab(event, 'thisMonth')">Questo mese</th>
+                    <th class="tab-links" onclick="openTab(event, 'lastMonth')">Mese scorso</th>
+                    <th class="tab-links" onclick="openTab(event, 'year')">Anno</th>
+                </thead>
+                <tbody class="bg-orange">
+                    <tr>
+                        <td colspan="2">Produzione</td>
+                        <td colspan="2">95</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Consumo</td>
+                        <td colspan="2">89</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Saldo</td>
+                        <td colspan="2">6</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Risultato</td>
+                        <td colspan="2">€ 600</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+
+        <span id="year" class="tab-content">
+            <table class="text-center">
+                <thead class="text-small">
+                    <th class="tab-links" onclick="openTab(event, 'lastWeek')">Ultima settimana</th>
+                    <th class="tab-links" onclick="openTab(event, 'thisMonth')">Questo mese</th>
+                    <th class="tab-links" onclick="openTab(event, 'lastMonth')">Mese scorso</th>
+                    <th class="tab-links" onclick="openTab(event, 'year')">Anno</th>
+                </thead>
+                <tbody class="bg-purple">
+                    <tr>
+                        <td colspan="2">Produzione</td>
+                        <td colspan="2">1069</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Consumo</td>
+                        <td colspan="2">994</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Saldo</td>
+                        <td colspan="2">75</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Risultato</td>
+                        <td colspan="2">€ 7.500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+    </section>
+
+    <br><br><br><br><br><br>
+    <p class="consumption-info text-center text-small">Valore in kWh <br>Valori aggregati per ora <br>Aggiornata alle
+        <span id="hour"></span>
+    </p>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

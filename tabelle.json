@@ -1,0 +1,148 @@
+{
+    "data": {
+        "home": [
+            {
+                "Production": {
+                    "Local": 12, 
+                    "Community": 20
+                },
+                "Consumption": {
+                    "Local": 29,
+                    "Community": 78
+                },
+                "Balance": {
+                    "Local": 25,
+                    "Community": 40
+                }
+            },
+            {
+                "Production": {
+                    "Local": 5,
+                    "Community": 36
+                },
+                "Consumption": {
+                    "Local": 42,
+                    "Community": 84
+                },
+                "Balance": {
+                    "Local": 33,
+                    "Community": 56
+                }
+            },
+            {
+                "Production": {
+                    "Local": 21,
+                    "Community": 67
+                },
+                "Consumption": {
+                    "Local": 22,
+                    "Community": 103
+                },
+                "Balance": {
+                    "Local": 7,
+                    "Community": 66
+                }
+            },
+            {
+                "Production": {
+                    "Local": 80,
+                    "Community": 456
+                },
+                "Consumption": {
+                    "Local": 14,
+                    "Community": 390
+                },
+                "Balance": {
+                    "Local": 19,
+                    "Community": 269
+                }
+            },
+            {
+                "Production": {
+                    "Local": 18,
+                    "Community": 40
+                },
+                "Consumption": {
+                    "Local": 39,
+                    "Community": 130
+                },
+                "Balance": {
+                    "Local": 16,
+                    "Community": 99
+                }
+            }
+        ],
+        "office": [
+            {
+                "Production": {
+                    "Local": 3,
+                    "Community": 89 
+                },
+                "Consumption": {
+                    "Local": 38,
+                    "Community": 172
+                },
+                "Balance": {
+                    "Local": 25,
+                    "Community": 60
+                }
+            },
+            {
+                "Production": {
+                    "Local": 15,
+                    "Community": 201
+                },
+                "Consumption": {
+                    "Local": 42,
+                    "Community": 59
+                },
+                "Balance": {
+                    "Local": 33,
+                    "Community": 46
+                }
+            },
+            {
+                "Production": {
+                    "Local": 4,
+                    "Community": 73
+                },
+                "Consumption": {
+                    "Local": 42,
+                    "Community": 90
+                },
+                "Balance": {
+                    "Local": 33,
+                    "Community": 46
+                }
+            },
+            {
+                "Production": {
+                    "Local": 24,
+                    "Community": 94
+                },
+                "Consumption": {
+                    "Local": 32,
+                    "Community": 57
+                },
+                "Balance": {
+                    "Local": 48,
+                    "Community": 116
+                }
+            },
+            {
+                "Production": {
+                    "Local": 30,
+                    "Community": 178
+                },
+                "Consumption": {
+                    "Local": 48,
+                    "Community": 321
+                },
+                "Balance": {
+                    "Local": 13,
+                    "Community": 99
+                }
+            }
+        ]
+    }
+}

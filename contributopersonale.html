@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributo personale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <img src="/images/logo.png" alt="Logo CerLog">
+        </section>
+
+        <section class="user-menu">
+            <div class="profile" onclick="menuToggle()">
+                <picture>
+                    <img src="images/userdark.png" id="darkUserPic">
+                    <img src="/images/user.png" id="lightUserPic">
+                </picture>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a href="index.html">Saldo attuale</a></li>
+                    <li><a href="#">Contributo personale</a></li>
+                    <li><a href="situazionecomunita.html">Situazione comunità</a></li>
+                    <li><a href="storicocomunita.html">Storico comunità</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+
+    <label class="switch">
+        <input type="checkbox" onclick="darkMode()">
+        <span class="slider round"></span>
+    </label>
+
+    <br>
+    <h1 class="tablet-title text-center">Contributo personale</h1>
+
+    <section id="tab">
+        <span id="home" class="tab-content">
+            <table class="text-center">
+                <thead>
+                    <th class="tab-links bg-clicked" onclick="openTab(event, 'home')" colspan="2">Casa</th>
+                    <th class="tab-links bg-clicked" onclick="openTab(event, 'office')" colspan="2">Ufficio</th>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray text-white">
+                        <td>Valore</td>
+                        <td>Locale</td>
+                        <td>Comunità</td>
+                        <td>Contributo</td>
+                    </tr>
+                    <tr class="bg-green">
+                        <td>Immissione</td>
+                        <td><input id="cell1" class="bg-green" type="number" step="1"
+                                onchange="calculatePercentage('cell1','community','output'), randomizeItem('cell1')">
+                        </td>
+                        <td id="community"></td>
+                        <td id="output">25%</td>
+                    </tr>
+                    <tr class="bg-orange">
+                        <td>Prelievo</td>
+                        <td><input id="cell2" class="bg-orange" type="number" step="1" value="6"
+                                onchange="calculatePercentage('cell2', 'community2', 'output2')"></td>
+                        <td id="community2">10</td>
+                        <td id="output2">10%</td>
+                    </tr>
+                    <tr class="bg-green">
+                        <td>Saldo</td>
+                        <td><input id="cell3" class="bg-green" type="number" step="1" value="3"
+                                onchange="calculatePercentage('cell3', 'community3', 'output3')"></td>
+                        <td id="community3">2</td>
+                        <td id="output3">50%</td>
+                    </tr>
+                    <tr class="bg-orange">
+                        <td>Cessione verso CER</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bg-green">
+                        <td>Prelievo da CER</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+
+        <span id="office" class="tab-content">
+            <table class="text-center">
+                <thead>
+                    <th class="tab-links" onclick="openTab(event, 'home')" colspan="2">Casa</th>
+                    <th class="tab-links" onclick="openTab(event, 'office')" colspan="2">Ufficio</th>
+                </thead>
+                <tbody>
+                    <tr class="bg-gray text-white">
+                        <td>Valore</td>
+                        <td>Locale</td>
+                        <td>Comunità</td>
+                        <td>Contributo</td>
+                    </tr>
+                    <tr class="bg-orange">
+                        <td>Immissione</td>
+                        <td><input id="cell4" class="bg-orange" type="number" step="1" value="6"
+                                onchange="calculatePercentage('cell4','community4','output4')"></td>
+                        <td id="community4">24</td>
+                        <td id="output4">25%</td>
+                    </tr>
+                    <tr class="bg-green">
+                        <td>Prelievo</td>
+                        <td><input id="cell5" class="bg-green" type="number" step="1" value="4"
+                                onchange="calculatePercentage('cell5','community5','output5')"></td>
+                        <td id="community5">10</td>
+                        <td id="output5">40%</td>
+                    </tr>
+                    <tr class="bg-orange">
+                        <td>Saldo</td>
+                        <td><input id="cell6" class="bg-orange" type="number" step="1" value="1"
+                                onchange="calculatePercentage('cell6','community6','output6')"></td>
+                        <td id="community6">2</td>
+                        <td id="output6">50%</td>
+                    </tr>
+                    <tr class="bg-green">
+                        <td>Cessione verso CER</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bg-orange">
+                        <td>Prelievo da CER</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </span>
+    </section>
+
+    <br><br><br><br><br><br>
+    <p class="consumption-info text-center text-small">Valore in kWh <br>Media dell'ultima ora <br>Aggiornata alle
+        <span id="hour"></span>
+    </p>
+
+    <script src="averageHour.js"></script>
+    <script type="module" src="newFile.js"></script>
+</body>
+
+</html>

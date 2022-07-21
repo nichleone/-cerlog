@@ -1,0 +1,313 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+.bg-green {
+    background-color: rgb(121, 214, 121);
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-gray {
+    background-color: rgb(196, 196, 196);
+}
+
+.bg-orange {
+    background-color: rgb(247, 184, 67);
+}
+
+.bg-blue {
+    background-color: rgb(0, 195, 255);
+}
+
+.bg-purple {
+    background-color: rgb(204, 110, 223);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 124px;
+    font-weight: bold;
+}
+
+.text-small {
+    font-size: 16px;
+}
+
+.text-black {
+    color: rgb(0, 0, 0);
+}
+
+.text-white {
+    color: #fff;
+}
+
+.border-round {
+    border: 1px black solid;
+    border-radius: 50%;
+}
+
+.header {
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.logo {
+    float: left;
+}
+
+.user-menu {
+    padding: 10px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 80px;
+    right: 6px;
+    padding: 10px 20px;
+    background-color: rgb(219, 255, 250);
+    width: 200px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-menu.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    direction: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu ul li a {
+    display: inline-block;
+    font-weight: 500;
+    transition: 0, 5s;
+}
+
+.dropdown-menu ul li:hover a {
+    color: rgb(61, 204, 248);
+}
+
+#indicator-value {
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.consumption-info {
+    color: rgb(105, 95, 95);
+    font-size: 22px;
+}
+
+.icons {
+    display: block;
+    margin: 0 auto;
+    margin-top: -22px;
+}
+
+#hour {
+    display: inline;
+}
+
+#hour2 {
+    display: inline;
+}
+
+table {
+    table-layout: fixed;
+    width: 450px;
+    height: 250px;
+    border-spacing: 0;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    clear: both;
+}
+
+th {
+    border-radius: 10px 10px 0 0;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+th:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+input {
+    border: none;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode th {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode td {
+    color: black;
+}
+
+.dark-mode #indicator-value {
+    border: 1px solid #fff;
+}
+
+.dark-mode .consumption-info {
+    color: #fff;
+}
+
+#darkUserPic {
+    visibility: hidden;
+}
+
+.dark-mode #darkUserPic {
+    visibility: visible;
+    display: inline-block;
+    margin-right: -74px;
+}
+
+.dark-mode #lightUserPic {
+    visibility: hidden;
+}
+
+#darkIcons {
+    visibility: hidden;
+}
+
+.dark-mode #darkIcons {
+    visibility: visible;
+    display: block;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.dark-mode #lightIcons {
+    visibility: hidden;
+}
+
+.switch {
+    display: block;
+    float: right;
+    margin-top: -56px;
+    margin-right: 80px;
+    clear: both;
+    position: relative;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(61, 204, 248);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(61, 204, 248);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media (min-device-width : 375px) and (max-device-width : 800px) {
+    table {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+.tablet-title {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .tablet-title {
+        visibility: visible;
+        position: relative;
+        top: 50px;
+        clear: both;
+    }
+}
